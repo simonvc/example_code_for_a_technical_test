@@ -18,7 +18,8 @@ sudo yum install -y puppet git
 """
 # 
 
-def install_tools
+def install_tools():
+  pass
 
 if '__main__' in __name__:
   print "Starting %s instances of %s" % (num_instances, AMI)

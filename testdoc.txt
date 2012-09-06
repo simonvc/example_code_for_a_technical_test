@@ -1,0 +1,25 @@
+Amazon EC2 is a web service that allows you to launch virtual machines on demand “in the cloud”. To use EC2, you can register for an Amazon AWS account here: http://aws.amazon.com/
+
+Write a script or scripts designed to execute on a typical Linux machine that will launch a given number of Amazon EC2 instances. Each instance, having started successfully, should fetch a specified Jetty version, install it, and launch it. This is a test of your ability to write easy to read, maintainable code. The scripts can be in any language but should be production quality. 
+
+Assume that the main script will be run as:
+[script-name] -n [number-of-instances] [jetty-version]
+
+and that the variables $AWS_ACCESS_KEY_ID and $AWS_SECRET_ACCESS_KEY exist in the environment.
+
+You will need to use the ec2-run-instances command:
+http://docs.amazonwebservices.com/AWSEC2/latest/CommandLineReference/ApiReference-cmd-RunInstances.html
+The command line tools are available here: http://aws.amazon.com/developertools/351
+
+Use an Amazon Linux instance store AMI to launch the instances. These AMI's are listed here: http://aws.amazon.com/amazon-linux-ami/
+
+You may also find the user-data and CloudInit mechanisms useful in this task. You can find information on these here: http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/AESDG-chapter-instancedata.html
+and here: http://docs.amazonwebservices.com/AWSEC2/latest/UserGuide/AmazonLinuxAMIBasics.html?r=5252
+
+Finally, Jetty versions are available here:
+http://dist.codehaus.org/jetty/
+ 
+Use any tools, practices, resources, and information you would normally use to complete production-quality code. If any of the instructions are unclear, make a reasonable assumption and document it with a comment.
+
+You have two hours to complete the test. Please return your answer by email, by attaching a .zip file. Your implementation should be production quality. Use any tools, practices, resources, and information you would normally use to complete production-quality code. Please keep the content of the test confidential.
+Thank you for your time, and good luck!
